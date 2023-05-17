@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .jumbo {
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-image: url("./assest/images/bg.svg");
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .hero {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+        }
+
+        .yee {
+            color: aliceblue;
+            align-items: center;
+            margin: 210px 900px 10px 150px;
+            font-size: 1.5rem;
+        }
+
+        .hm {
+            background-color: coral;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 3rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            margin: 0px 2rem;
+            text-decoration: none;
+            justify-content: space-between;
+
+        }
+
+        @media (max-width: 800px) {
+            .hero-image {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbo"></div>
+    <img src="./assest/images/bg-dots.svg" alt="" class="hero">
+    <img src="./assest/images/user.png" alt="" class="hero">
+    <div class="yee ">
+        <h1>Hey! I'm John</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur, saepe totam
+            exercitationem
+            et perferendis ex odio in accusamus optio eaque sequi consectetur nulla, itaque fugiat voluptates.
+            Excepturi,
+            quia numquam! </p>
+        <br>
+        <a href="cta">Contact Me</a>
+    </div>
+    <div class="hm">
+        <h1>John</h1>
+        <div>
+
+            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="">About</a>
+            <a class="nav-link" href="">Contact</a>
+
+        </div>
+    </div>
+    <div style="height: 5000px;"></div>
+</body>
+
+</html>

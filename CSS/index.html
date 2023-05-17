@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .box {
+            height: 200px;
+            background-color: rgb(123, 153, 186);
+        }
+
+        .card {
+            border: 2px solid black;
+            max-width: 600px;
+            margin: 0 auto;
+            /* height: 630px; */
+            margin-top: -190px;
+
+        }
+
+        .card-header {
+            /* color: white; */
+            /* background-color: purple; */
+            background-image: url("./assest/images/1.svg");
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .card-header h1 {
+            color: white;
+            font-size: 3rem
+        }
+
+        .card-header>p {
+            color: rgb(208, 208, 208);
+            margin: 1rem 0;
+        }
+
+        .card-body {
+            padding: 2rem 1rem;
+            background-color: white;
+        }
+
+        .card-body p {
+            color: darkgray;
+        }
+
+        .card-body span {
+            background-color: purple;
+            color: rgb(208, 208, 208);
+            padding: 0.5rem 1rem;
+            width: 150px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+
+        .input-group span {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-body input::placeholder {
+            color: purple;
+            padding: 0px 1rem;
+        }
+
+        .card-body input {
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: none;
+            background-color: rgb(241, 224, 241);
+            height: 3rem;
+
+        }
+
+        .input-group {
+            display: flex;
+        }
+
+        .put-group {
+            display: flex;
+        }
+
+        .out-group {
+            display: flex;
+        }
+
+        .card-body>button {
+            width: 100%;
+            background-color: purple;
+            padding: 1rem;
+            color: white;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 15px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="card">
+        <div class="card-header">
+            <h1>Secure login</h1>
+            <!-- <img src="./assest/images/1.svg" alt=""> -->
+            <p>Powered By MONJULIKA</p>
+        </div>
+        <div class="card-body">
+            <div class="input-group">
+                <span>User Name</span>
+                <input type="text" class="hvr-grow" placeholder=" Registered Email/Mobile number">
+
+            </div>
+            <br>
+            <p>You can use your registered email or mobile number</p>
+            <br>
+            <div class="put-group">
+                <span>Class Pin</span>
+                <input type="text" class="hvr-grow" placeholder=" Pin">
+                <br>
+            </div>
+            <br>
+
+            <p> Enter 4 digit Pin that you can recived through SMS</p>
+            <br>
+            <div class="out-group">
+                <span>Password</span>
+                <input type="text" class="hvr-grow" placeholder="Password">
+            </div>
+            <br>
+            <p> Forget Password ?</p>
+            <link rel="stylesheet" href=" button"><button class="button">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            display: none;
+
+        }
+
+        body {
+            background-color: chartreuse;
+        }
+
+        @media(max-width: 801px) {
+            body {
+                background-color: forestgreen;
+            }
+
+            h1 {
+                display: inline;
+            }
+
+            .okay {
+                flex-direction: column;
+            }
+
+        }
+
+        .okay {
+            display: flex;
+        }
+
+        .child {
+            border: 2px solid black;
+            background-color: darkblue;
+            padding: 2rem;
+            margin: 2rem 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Br ye ka mg mandali ?</h1>
+    <div class="okay">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child">Child3</div>
+
+    </div>
+</body>
+
+</html>
